@@ -1,0 +1,15 @@
+[project]
+name = "debugkit"
+version = "0.0.1"
+dependencies = [
+    "pytest",
+    "pydantic",
+    "python-dotenv",
+    "requests"
+]
+
+[options.packages.find]
+where = ["src"]
+
+[project.scripts]
+my_cli_shortcut = "debugkit.__main__:run"
